@@ -82,7 +82,7 @@ class PayCard extends React.Component {
                         </div>
                         <div className={classes.footer}>
                             <Typography className={classes.pos} component="p" color="textSecondary">
-                                Precios proporcionados por <a href="https://es.cryptonator.com/api" target="_blank"> Cryptonator </a>
+                                Precios proporcionados por <a rel="noopener noreferrer" href="https://es.cryptonator.com/api" target="_blank"> Cryptonator </a>
                             </Typography>
                         </div>
                     </CardContent>

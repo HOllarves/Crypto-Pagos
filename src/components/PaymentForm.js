@@ -68,9 +68,13 @@ class PaymentForm extends React.Component {
         ev.preventDefault()
         axios.post(process.env.REACT_APP_API_URL, { price: this.state.finalPrice.toFixed(8), currency: this.state.currency })
             .then(response => {
+                console.log(response)
                 if (response && response.status === 200) {
                     window.open(response.data, '_blank')
                 }
+            })
+            .catch(err => {
+                console.log(err)
             })
     }
 
